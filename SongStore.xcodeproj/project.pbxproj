@@ -19,6 +19,7 @@
 		8CB4FE062ACA6BF600A46DD9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8CB4FE052ACA6BF600A46DD9 /* Kingfisher */; };
 		8CB4FE092ACA6E0700A46DD9 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4FE082ACA6E0700A46DD9 /* SongModel.swift */; };
 		8CB4FE0B2ACA6E3C00A46DD9 /* SongListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4FE0A2ACA6E3C00A46DD9 /* SongListViewModel.swift */; };
+		8CB4FE102ACAA1A200A46DD9 /* SongListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4FE0F2ACAA1A200A46DD9 /* SongListViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		8CB4FDEA2ACA6BB900A46DD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8CB4FE082ACA6E0700A46DD9 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
 		8CB4FE0A2ACA6E3C00A46DD9 /* SongListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewModel.swift; sourceTree = "<group>"; };
+		8CB4FE0F2ACAA1A200A46DD9 /* SongListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		8CB4FDE52ACA6BB900A46DD9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8CB4FE0F2ACAA1A200A46DD9 /* SongListViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				8CB4FDED2ACA6BB900A46DD9 /* AppDelegate.swift in Sources */,
 				8CB4FE092ACA6E0700A46DD9 /* SongModel.swift in Sources */,
+				8CB4FE102ACAA1A200A46DD9 /* SongListViewCell.swift in Sources */,
 				8CB4FDEC2ACA6BB900A46DD9 /* ViewController.swift in Sources */,
 				8CB4FE0B2ACA6E3C00A46DD9 /* SongListViewModel.swift in Sources */,
 				8CB4FDD12ACA6AE500A46DD9 /* SongStore.xcdatamodeld in Sources */,
