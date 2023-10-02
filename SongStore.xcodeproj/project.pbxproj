@@ -7,25 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8CB4FDC72ACA6AE500A46DD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4FDC62ACA6AE500A46DD9 /* AppDelegate.swift */; };
-		8CB4FDC92ACA6AE500A46DD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4FDC82ACA6AE500A46DD9 /* SceneDelegate.swift */; };
-		8CB4FDCB2ACA6AE500A46DD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4FDCA2ACA6AE500A46DD9 /* ViewController.swift */; };
 		8CB4FDCE2ACA6AE500A46DD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB4FDCC2ACA6AE500A46DD9 /* Main.storyboard */; };
 		8CB4FDD12ACA6AE500A46DD9 /* SongStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4FDCF2ACA6AE500A46DD9 /* SongStore.xcdatamodeld */; };
 		8CB4FDD32ACA6AE600A46DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB4FDD22ACA6AE600A46DD9 /* Assets.xcassets */; };
 		8CB4FDD62ACA6AE600A46DD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB4FDD42ACA6AE600A46DD9 /* LaunchScreen.storyboard */; };
+		8CB4FDEC2ACA6BB900A46DD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4FDE72ACA6BB900A46DD9 /* ViewController.swift */; };
+		8CB4FDED2ACA6BB900A46DD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4FDE92ACA6BB900A46DD9 /* AppDelegate.swift */; };
+		8CB4FDEE2ACA6BB900A46DD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4FDEA2ACA6BB900A46DD9 /* SceneDelegate.swift */; };
+		8CB4FDF52ACA6BE800A46DD9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 8CB4FDF42ACA6BE800A46DD9 /* RxCocoa */; };
+		8CB4FDFD2ACA6BE800A46DD9 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8CB4FDFC2ACA6BE800A46DD9 /* RxSwift */; };
+		8CB4FE062ACA6BF600A46DD9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8CB4FE052ACA6BF600A46DD9 /* Kingfisher */; };
+		8CB4FE092ACA6E0700A46DD9 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4FE082ACA6E0700A46DD9 /* SongModel.swift */; };
+		8CB4FE0B2ACA6E3C00A46DD9 /* SongListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4FE0A2ACA6E3C00A46DD9 /* SongListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8CB4FDC32ACA6AE500A46DD9 /* SongStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CB4FDC62ACA6AE500A46DD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8CB4FDC82ACA6AE500A46DD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8CB4FDCA2ACA6AE500A46DD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8CB4FDCD2ACA6AE500A46DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CB4FDD02ACA6AE500A46DD9 /* SongStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SongStore.xcdatamodel; sourceTree = "<group>"; };
 		8CB4FDD22ACA6AE600A46DD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CB4FDD52ACA6AE600A46DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CB4FDD72ACA6AE600A46DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CB4FDE12ACA6B2C00A46DD9 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		8CB4FDE22ACA6B2C00A46DD9 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		8CB4FDE32ACA6B3200A46DD9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		8CB4FDE42ACA6B3200A46DD9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		8CB4FDE72ACA6BB900A46DD9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CB4FDE92ACA6BB900A46DD9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CB4FDEA2ACA6BB900A46DD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8CB4FE082ACA6E0700A46DD9 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
+		8CB4FE0A2ACA6E3C00A46DD9 /* SongListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CB4FDF52ACA6BE800A46DD9 /* RxCocoa in Frameworks */,
+				8CB4FE062ACA6BF600A46DD9 /* Kingfisher in Frameworks */,
+				8CB4FDFD2ACA6BE800A46DD9 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +72,11 @@
 		8CB4FDC52ACA6AE500A46DD9 /* SongStore */ = {
 			isa = PBXGroup;
 			children = (
-				8CB4FDC62ACA6AE500A46DD9 /* AppDelegate.swift */,
-				8CB4FDC82ACA6AE500A46DD9 /* SceneDelegate.swift */,
-				8CB4FDCA2ACA6AE500A46DD9 /* ViewController.swift */,
+				8CB4FE072ACA6DE900A46DD9 /* Model */,
+				8CB4FDE82ACA6BB900A46DD9 /* Delegate */,
+				8CB4FDE52ACA6BB900A46DD9 /* View */,
+				8CB4FDE62ACA6BB900A46DD9 /* ViewController */,
+				8CB4FDEB2ACA6BB900A46DD9 /* ViewModel */,
 				8CB4FDCC2ACA6AE500A46DD9 /* Main.storyboard */,
 				8CB4FDD22ACA6AE600A46DD9 /* Assets.xcassets */,
 				8CB4FDD42ACA6AE600A46DD9 /* LaunchScreen.storyboard */,
@@ -68,6 +84,46 @@
 				8CB4FDCF2ACA6AE500A46DD9 /* SongStore.xcdatamodeld */,
 			);
 			path = SongStore;
+			sourceTree = "<group>";
+		};
+		8CB4FDE52ACA6BB900A46DD9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8CB4FDE62ACA6BB900A46DD9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8CB4FDE72ACA6BB900A46DD9 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8CB4FDE82ACA6BB900A46DD9 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8CB4FDE92ACA6BB900A46DD9 /* AppDelegate.swift */,
+				8CB4FDEA2ACA6BB900A46DD9 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		8CB4FDEB2ACA6BB900A46DD9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8CB4FE0A2ACA6E3C00A46DD9 /* SongListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8CB4FE072ACA6DE900A46DD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8CB4FE082ACA6E0700A46DD9 /* SongModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +142,11 @@
 			dependencies = (
 			);
 			name = SongStore;
+			packageProductDependencies = (
+				8CB4FDF42ACA6BE800A46DD9 /* RxCocoa */,
+				8CB4FDFC2ACA6BE800A46DD9 /* RxSwift */,
+				8CB4FE052ACA6BF600A46DD9 /* Kingfisher */,
+			);
 			productName = SongStore;
 			productReference = 8CB4FDC32ACA6AE500A46DD9 /* SongStore.app */;
 			productType = "com.apple.product-type.application";
@@ -112,8 +173,14 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
+				"zh-Hans",
 			);
 			mainGroup = 8CB4FDBA2ACA6AE500A46DD9;
+			packageReferences = (
+				8CB4FDEF2ACA6BE800A46DD9 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				8CB4FE042ACA6BF600A46DD9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 8CB4FDC42ACA6AE500A46DD9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,10 +208,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CB4FDCB2ACA6AE500A46DD9 /* ViewController.swift in Sources */,
-				8CB4FDC72ACA6AE500A46DD9 /* AppDelegate.swift in Sources */,
+				8CB4FDED2ACA6BB900A46DD9 /* AppDelegate.swift in Sources */,
+				8CB4FE092ACA6E0700A46DD9 /* SongModel.swift in Sources */,
+				8CB4FDEC2ACA6BB900A46DD9 /* ViewController.swift in Sources */,
+				8CB4FE0B2ACA6E3C00A46DD9 /* SongListViewModel.swift in Sources */,
 				8CB4FDD12ACA6AE500A46DD9 /* SongStore.xcdatamodeld in Sources */,
-				8CB4FDC92ACA6AE500A46DD9 /* SceneDelegate.swift in Sources */,
+				8CB4FDEE2ACA6BB900A46DD9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +224,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				8CB4FDCD2ACA6AE500A46DD9 /* Base */,
+				8CB4FDE12ACA6B2C00A46DD9 /* zh-Hant */,
+				8CB4FDE32ACA6B3200A46DD9 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -163,6 +234,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				8CB4FDD52ACA6AE600A46DD9 /* Base */,
+				8CB4FDE22ACA6B2C00A46DD9 /* zh-Hant */,
+				8CB4FDE42ACA6B3200A46DD9 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -174,6 +247,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -234,6 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -299,6 +374,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,6 +403,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,6 +439,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8CB4FDEF2ACA6BE800A46DD9 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		8CB4FE042ACA6BF600A46DD9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8CB4FDF42ACA6BE800A46DD9 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CB4FDEF2ACA6BE800A46DD9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		8CB4FDFC2ACA6BE800A46DD9 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CB4FDEF2ACA6BE800A46DD9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		8CB4FE052ACA6BF600A46DD9 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CB4FE042ACA6BF600A46DD9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		8CB4FDCF2ACA6AE500A46DD9 /* SongStore.xcdatamodeld */ = {
