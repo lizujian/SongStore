@@ -14,7 +14,7 @@ struct SearchResponse: Decodable {
 
 struct Song: Decodable {
     let wrapperType: String?
-    let kind: String
+    let kind: String?
     let artistId: Int?
     let collectionId: Int?
     let trackId: Int
@@ -27,21 +27,21 @@ struct Song: Decodable {
     let collectionViewUrl: String?
     let trackViewUrl: String?
     let previewUrl: String?
-    let artworkUrl30: String
+    let artworkUrl30: String?
     let artworkUrl60: String
     let artworkUrl100: String
     let collectionPrice: Float?
     let trackPrice: Float?
     let releaseDate: String
-    let collectionExplicitness: String
-    let trackExplicitness: String
+    let collectionExplicitness: String?
+    let trackExplicitness: String?
     let discCount: Int?
     let discNumber: Int?
     let trackCount: Int?
     let trackNumber: Int?
     let trackTimeMillis: Int?
-    let country: String
+    let country: String?
     let currency: String
-    let primaryGenreName: String
+    let primaryGenreName: String?
     let isStreamable: Bool?
 }

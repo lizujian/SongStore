@@ -20,6 +20,7 @@
 		8CB4FE092ACA6E0700A46DD9 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4FE082ACA6E0700A46DD9 /* SongModel.swift */; };
 		8CB4FE0B2ACA6E3C00A46DD9 /* SongListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4FE0A2ACA6E3C00A46DD9 /* SongListViewModel.swift */; };
 		8CB4FE102ACAA1A200A46DD9 /* SongListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4FE0F2ACAA1A200A46DD9 /* SongListViewCell.swift */; };
+		8CEEAB3A2ACB39790035BA1D /* MJRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = 8CEEAB392ACB39790035BA1D /* MJRefresh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 				8CB4FDF52ACA6BE800A46DD9 /* RxCocoa in Frameworks */,
 				8CB4FE062ACA6BF600A46DD9 /* Kingfisher in Frameworks */,
 				8CB4FDFD2ACA6BE800A46DD9 /* RxSwift in Frameworks */,
+				8CEEAB3A2ACB39790035BA1D /* MJRefresh in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +151,7 @@
 				8CB4FDF42ACA6BE800A46DD9 /* RxCocoa */,
 				8CB4FDFC2ACA6BE800A46DD9 /* RxSwift */,
 				8CB4FE052ACA6BF600A46DD9 /* Kingfisher */,
+				8CEEAB392ACB39790035BA1D /* MJRefresh */,
 			);
 			productName = SongStore;
 			productReference = 8CB4FDC32ACA6AE500A46DD9 /* SongStore.app */;
@@ -183,6 +186,7 @@
 			packageReferences = (
 				8CB4FDEF2ACA6BE800A46DD9 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				8CB4FE042ACA6BF600A46DD9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				8CEEAB382ACB39790035BA1D /* XCRemoteSwiftPackageReference "MJRefresh" */,
 			);
 			productRefGroup = 8CB4FDC42ACA6AE500A46DD9 /* Products */;
 			projectDirPath = "";
@@ -461,6 +465,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		8CEEAB382ACB39790035BA1D /* XCRemoteSwiftPackageReference "MJRefresh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:CoderMJLee/MJRefresh.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -478,6 +490,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8CB4FE042ACA6BF600A46DD9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		8CEEAB392ACB39790035BA1D /* MJRefresh */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CEEAB382ACB39790035BA1D /* XCRemoteSwiftPackageReference "MJRefresh" */;
+			productName = MJRefresh;
 		};
 /* End XCSwiftPackageProductDependency section */
 

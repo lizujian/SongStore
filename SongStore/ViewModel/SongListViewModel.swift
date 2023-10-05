@@ -15,7 +15,7 @@ class SongService {
             return Observable.just([])
         }
         
-        guard let url = URL(string: "https://itunes.apple.com/search?term=\(encodedSearchTerm)&offset=\(offset)&limit=\(limit)") else {
+        guard let url = URL(string: "https://itunes.apple.com/search?media=ebook&term=\(encodedSearchTerm)&offset=\(offset)&limit=\(limit)") else {
             return Observable.just([])
         }
         var request = URLRequest(url: url)
@@ -43,9 +43,48 @@ class SongService {
 class SongListViewModel {
     private let songService = SongService()
     private let disposeBag = DisposeBag()
-    let offset = 0
-    let limit = 20
+    var term: String?
+    var offset = 0
+    var limit = 20
     let songs = BehaviorRelay<[Song]>(value: [])
+    let refreshCompelted = PublishSubject<Void>()
+    let loadMoreCompelted = PublishSubject<Bool>()
+    
+    let loadMoreAction = PublishSubject<Void>()
+    let refreshAction = PublishSubject<Void>()
+    
+    func clearSongs() {
+        self.offset = 0
+        self.songs.accept([])
+    }
+    
+    init() {
+        refreshAction.subscribe { [weak self] _ in
+            self?.refreshTriggered()
+        }.disposed(by: disposeBag)
+        
+        loadMoreAction.subscribe { [weak self] _ in
+            self?.loadMoreTriggered()
+        }.disposed(by: disposeBag)
+    }
+    
+    private func refreshTriggered() {
+        guard let term = term else {
+            self.refreshCompelted.onNext(())
+            return
+        }
+        offset = 0
+        fetchSongs(for: term)
+    }
+    
+    private func loadMoreTriggered() {
+        guard let term = term else {
+            self.loadMoreCompelted.onNext(false)
+            return
+        }
+        offset += songs.value.count
+        fetchSongs(for: term)
+    }
     
     func fetchSongs(for searchTerm: String) {
         let newTerm = searchTerm.replacingOccurrences(of: " ", with: "+")
@@ -53,11 +92,16 @@ class SongListViewModel {
             .subscribe(onNext: { [weak self] songs in
                 if self?.offset == 0 {
                     self?.songs.accept(songs)
+                    self?.refreshCompelted.onNext(())
+                    if songs.isEmpty {
+                        self?.loadMoreCompelted.onNext(false)
+                    }
                 } else {
                     if var array = self?.songs.value {
                         array.append(contentsOf: songs)
                         self?.songs.accept(array)
                     }
+                    self?.loadMoreCompelted.onNext(!songs.isEmpty)
                 }
             })
             .disposed(by: disposeBag)
