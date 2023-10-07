@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  SongStore
+
+  Created by LiZuJian on 2023/10/7.
+  
+*/
+"SongStore" = "SongStore";
+"Favorite" = "Favorite";
+"Collect" = "Collect";
+"Collected" = "Collected";
+"Type something here to search" = "Type something here to search";

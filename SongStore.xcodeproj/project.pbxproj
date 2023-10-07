@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C6DEC412ACFFBBC00B1AE85 /* SongDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6DEC402ACFFBBC00B1AE85 /* SongDataManager.swift */; };
+		8C6DEC592AD0E64000B1AE85 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6DEC582AD0E64000B1AE85 /* FavoriteViewController.swift */; };
+		8C6DEC5C2AD0EFB600B1AE85 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C6DEC5E2AD0EFB600B1AE85 /* Localizable.strings */; };
+		8C6DEC632AD0F0A300B1AE85 /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6DEC622AD0F0A300B1AE85 /* LocalizationHelper.swift */; };
 		8CB4FDCE2ACA6AE500A46DD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB4FDCC2ACA6AE500A46DD9 /* Main.storyboard */; };
 		8CB4FDD12ACA6AE500A46DD9 /* SongStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CB4FDCF2ACA6AE500A46DD9 /* SongStore.xcdatamodeld */; };
 		8CB4FDD32ACA6AE600A46DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB4FDD22ACA6AE600A46DD9 /* Assets.xcassets */; };
@@ -24,6 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C6DEC402ACFFBBC00B1AE85 /* SongDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDataManager.swift; sourceTree = "<group>"; };
+		8C6DEC582AD0E64000B1AE85 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		8C6DEC5D2AD0EFB600B1AE85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8C6DEC5F2AD0EFBB00B1AE85 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		8C6DEC602AD0EFBC00B1AE85 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		8C6DEC622AD0F0A300B1AE85 /* LocalizationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationHelper.swift; sourceTree = "<group>"; };
 		8CB4FDC32ACA6AE500A46DD9 /* SongStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB4FDCD2ACA6AE500A46DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CB4FDD02ACA6AE500A46DD9 /* SongStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SongStore.xcdatamodel; sourceTree = "<group>"; };
@@ -57,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C6DEC612AD0F08400B1AE85 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8C6DEC622AD0F0A300B1AE85 /* LocalizationHelper.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		8CB4FDBA2ACA6AE500A46DD9 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +94,7 @@
 		8CB4FDC52ACA6AE500A46DD9 /* SongStore */ = {
 			isa = PBXGroup;
 			children = (
+				8C6DEC612AD0F08400B1AE85 /* Util */,
 				8CB4FE072ACA6DE900A46DD9 /* Model */,
 				8CB4FDE82ACA6BB900A46DD9 /* Delegate */,
 				8CB4FDE52ACA6BB900A46DD9 /* View */,
@@ -86,6 +105,7 @@
 				8CB4FDD42ACA6AE600A46DD9 /* LaunchScreen.storyboard */,
 				8CB4FDD72ACA6AE600A46DD9 /* Info.plist */,
 				8CB4FDCF2ACA6AE500A46DD9 /* SongStore.xcdatamodeld */,
+				8C6DEC5E2AD0EFB600B1AE85 /* Localizable.strings */,
 			);
 			path = SongStore;
 			sourceTree = "<group>";
@@ -102,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				8CB4FDE72ACA6BB900A46DD9 /* ViewController.swift */,
+				8C6DEC582AD0E64000B1AE85 /* FavoriteViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -119,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				8CB4FE0A2ACA6E3C00A46DD9 /* SongListViewModel.swift */,
+				8C6DEC402ACFFBBC00B1AE85 /* SongDataManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -203,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CB4FDD62ACA6AE600A46DD9 /* LaunchScreen.storyboard in Resources */,
+				8C6DEC5C2AD0EFB600B1AE85 /* Localizable.strings in Resources */,
 				8CB4FDD32ACA6AE600A46DD9 /* Assets.xcassets in Resources */,
 				8CB4FDCE2ACA6AE500A46DD9 /* Main.storyboard in Resources */,
 			);
@@ -219,6 +242,9 @@
 				8CB4FE092ACA6E0700A46DD9 /* SongModel.swift in Sources */,
 				8CB4FE102ACAA1A200A46DD9 /* SongListViewCell.swift in Sources */,
 				8CB4FDEC2ACA6BB900A46DD9 /* ViewController.swift in Sources */,
+				8C6DEC632AD0F0A300B1AE85 /* LocalizationHelper.swift in Sources */,
+				8C6DEC592AD0E64000B1AE85 /* FavoriteViewController.swift in Sources */,
+				8C6DEC412ACFFBBC00B1AE85 /* SongDataManager.swift in Sources */,
 				8CB4FE0B2ACA6E3C00A46DD9 /* SongListViewModel.swift in Sources */,
 				8CB4FDD12ACA6AE500A46DD9 /* SongStore.xcdatamodeld in Sources */,
 				8CB4FDEE2ACA6BB900A46DD9 /* SceneDelegate.swift in Sources */,
@@ -228,6 +254,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		8C6DEC5E2AD0EFB600B1AE85 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C6DEC5D2AD0EFB600B1AE85 /* en */,
+				8C6DEC5F2AD0EFBB00B1AE85 /* zh-Hans */,
+				8C6DEC602AD0EFBC00B1AE85 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		8CB4FDCC2ACA6AE500A46DD9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

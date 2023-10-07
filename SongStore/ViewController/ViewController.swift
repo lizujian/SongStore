@@ -22,7 +22,13 @@ class ViewController: UIViewController, UISearchResultsUpdating, UITableViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = L10n("SongStore")
         configureUI()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.reloadData()
     }
     
     func configureUI() {
@@ -38,7 +44,12 @@ class ViewController: UIViewController, UISearchResultsUpdating, UITableViewDele
             cell.des1Label.text = song.artistName
             cell.des2Label.text = song.collectionName
             cell.des3Label.text = song.country
-
+            let id = String(song.trackId)
+            if SongDataManager.shared.favoritesDict[id] != nil {
+                cell.status = .collected
+            } else {
+                cell.status = .normal
+            }
             if let imageURL = URL(string: song.artworkUrl60) {
                 cell.coverImageView.kf.setImage(with: imageURL)
             }
@@ -65,7 +76,7 @@ class ViewController: UIViewController, UISearchResultsUpdating, UITableViewDele
         let search = UISearchController(searchResultsController: nil)
         search.searchResultsUpdater = self
         search.obscuresBackgroundDuringPresentation = false
-        search.searchBar.placeholder = "Type something here to search"
+        search.searchBar.placeholder = L10n("Type something here to search")
         search.searchBar.delegate = self
         navigationItem.searchController = search
         
@@ -99,8 +110,10 @@ class ViewController: UIViewController, UISearchResultsUpdating, UITableViewDele
     func collectOrNot(cell:SongListViewCell, song: Song) {
         if cell.status == .normal {
             cell.status = .collected
+            SongDataManager.shared.addSong(song: song)
         } else {
             cell.status = .normal
+            SongDataManager.shared.removeSong(song: song)
         }
     }
     

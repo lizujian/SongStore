@@ -12,8 +12,8 @@ import RxCocoa
 class SongListViewCell: UITableViewCell {
     
     enum Status: String {
-    case normal = "收藏"
-    case collected = "已收藏"
+    case normal = "Collect"
+    case collected = "Collected"
     }
     
     @IBOutlet weak var coverImageView: UIImageView!
@@ -28,7 +28,7 @@ class SongListViewCell: UITableViewCell {
     var disposeBag = DisposeBag()
     var status: Status = .normal {
         didSet {
-            collectBtn.setTitle(status.rawValue, for: .normal)
+            collectBtn.setTitle(L10n(status.rawValue), for: .normal)
         }
     }
     override func awakeFromNib() {

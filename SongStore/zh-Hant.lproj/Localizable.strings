@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  SongStore
+
+  Created by LiZuJian on 2023/10/7.
+  
+*/
+"SongStore" = "音樂列表";
+"Favorite" = "收藏列表";
+"Collect" = "收藏";
+"Collected" = "已收藏";
+"Type something here to search" = "輸入文字檢索";
